@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mhr_fhir_endpoint</key>
+	<string>https://nehta-drp-iis.nehta.net.au/MhrMobile110</string>
+	<key>authorize_uri</key>
+	<string>https://nehta-drp-iis.nehta.net.au/IdentityServer/identity/connect/authorize</string>
+	<key>token_uri</key>
+	<string>https://nehta-drp-iis.nehta.net.au/IdentityServer/identity/connect/token</string>
+	<key>mhr_app_version</key>
+	<string>v1.1.0</string>
+	<key>client_app_id</key>
+	<string>2.2.0</string>
+	<key>client_id</key>
+	<string>28198d27-c475-4695-83d3-1f1f8256e01b</string>
+	<key>client_secret</key>
+	<string>1c73a74b-45fc-4ee4-a400-15a398e46143</string>
+	<key>scope</key>
+	<string>https://localhost:8090/pcehr offline_access</string>
+	<key>redirect_uris</key>
+	<array>
+		<string>https://localhost/oauth_callback</string>
+	</array>
+	<key>keychain</key>
+	<true/>
+	<key>secret_in_body</key>
+	<true/>
+	<key>verbose</key>
+	<true/>
+</dict>
+</plist>

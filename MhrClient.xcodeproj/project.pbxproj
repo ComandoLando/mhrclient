@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26227BA81DD285F600D044DB /* TestServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227BA71DD285F600D044DB /* TestServiceBase.swift */; };
+		26227BAA1DD286E900D044DB /* AccessCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26227BA91DD286E900D044DB /* AccessCredentials.plist */; };
+		26227BAD1DD2889F00D044DB /* IdentificationServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227BAC1DD2889F00D044DB /* IdentificationServicesTests.swift */; };
+		26227BB01DD2A27400D044DB /* MhrConfigurationDrp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26227BAE1DD2A27400D044DB /* MhrConfigurationDrp.plist */; };
+		26227BB11DD2A27400D044DB /* MhrConfigurationSvt.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26227BAF1DD2A27400D044DB /* MhrConfigurationSvt.plist */; };
+		266B298C1DD04AFE00068C75 /* ConsumerDocumentAllergyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B298B1DD04AFE00068C75 /* ConsumerDocumentAllergyServices.swift */; };
+		266B298E1DD04B0A00068C75 /* ConsumerDocumentAllergyServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B298D1DD04B0A00068C75 /* ConsumerDocumentAllergyServicesProtocol.swift */; };
+		2676FC771DC6D71700322C8C /* MhrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676FC761DC6D71700322C8C /* MhrClient.swift */; };
+		269307B01DD3F44C0040801A /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269307AF1DD3F44C0040801A /* TestHelper.swift */; };
+		26AA2A8D1DC6F82200855F71 /* MhrClientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A8B1DC6F82200855F71 /* MhrClientHelper.swift */; };
+		26AA2AA91DC707A100855F71 /* MhrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2AA81DC707A100855F71 /* MhrError.swift */; };
+		26C6C1DF1DDAB9270069E772 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C6C1CB1DDAB9040069E772 /* OAuth2.framework */; };
+		26C6C1E01DDAB92B0069E772 /* SwiftFHIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C6C1DC1DDAB9110069E772 /* SwiftFHIR.framework */; };
+		26EBABEE1DB842E40085A4FC /* MhrClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBABE41DB842E40085A4FC /* MhrClient.framework */; };
+		26EBABF51DB842E40085A4FC /* MhrClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 26EBABE71DB842E40085A4FC /* MhrClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59BF424B1DD2F3BC003116B6 /* GenericDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BF424A1DD2F3BC003116B6 /* GenericDocumentationTests.swift */; };
+		5A266D441DCAB12000478168 /* IdentificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D431DCAB12000478168 /* IdentificationServices.swift */; };
+		5A266D461DCAB12C00478168 /* IdentificationServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D451DCAB12C00478168 /* IdentificationServicesProtocol.swift */; };
+		5A266D4A1DCAC3AA00478168 /* AuthenticationServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D491DCAC3AA00478168 /* AuthenticationServicesProtocol.swift */; };
+		5A266D4E1DCAC3FA00478168 /* MedicareInformationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D4D1DCAC3FA00478168 /* MedicareInformationProtocol.swift */; };
+		5A266D521DCAC43B00478168 /* GenericDocumentServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D511DCAC43B00478168 /* GenericDocumentServicesProtocol.swift */; };
+		5A266D541DCAC45500478168 /* ConsumerDocumentMedicationServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D531DCAC45500478168 /* ConsumerDocumentMedicationServicesProtocol.swift */; };
+		5A266D561DCAC46E00478168 /* ClinicalDocumentServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D551DCAC46E00478168 /* ClinicalDocumentServicesProtocol.swift */; };
+		5A266D581DCAC9F200478168 /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D571DCAC9F200478168 /* ServiceBase.swift */; };
+		5A266D5A1DCACF5C00478168 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A266D591DCACF5C00478168 /* AuthenticationServices.swift */; };
+		5A4B3D0D1DD564F9005B375F /* ConsumerDocumentMedicationServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B3D0C1DD564F9005B375F /* ConsumerDocumentMedicationServicesTests.swift */; };
+		5A4B3D0F1DD565E3005B375F /* CreateMedicationsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4B3D0E1DD565E3005B375F /* CreateMedicationsTest.json */; };
+		5AF54FEA1DCC535A00303A32 /* GenericDocumentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF54FE91DCC535A00303A32 /* GenericDocumentServices.swift */; };
+		5AF54FF21DCC536E00303A32 /* MedicareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF54FF11DCC536E00303A32 /* MedicareInformation.swift */; };
+		5AF54FF41DCC538000303A32 /* ConsumerDocumentMedicationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF54FF31DCC538000303A32 /* ConsumerDocumentMedicationServices.swift */; };
+		5AF54FF61DCC539600303A32 /* ClinicalDocumentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF54FF51DCC539600303A32 /* ClinicalDocumentServices.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26C6C1C81DDAB9040069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209471942772800736F1A;
+			remoteInfo = OAuth2macOS;
+		};
+		26C6C1CA1DDAB9040069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEDB8624193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+		26C6C1CC1DDAB9040069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 659854461C5B3BEA00237D39;
+			remoteInfo = OAuth2tvOS;
+		};
+		26C6C1CE1DDAB9040069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209A219427DFE00736F1A;
+			remoteInfo = OAuth2Tests;
+		};
+		26C6C1D71DDAB9110069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE684C1E19A789BA00B5A2C0;
+			remoteInfo = "SwiftFHIR-OSX";
+		};
+		26C6C1D91DDAB9110069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE684C2919A789BA00B5A2C0;
+			remoteInfo = SwiftFHIRTests;
+		};
+		26C6C1DB1DDAB9110069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE6DA8571A5D4B1000E00708;
+			remoteInfo = "SwiftFHIR-iOS";
+		};
+		26C6C1DD1DDAB9110069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE6DA85D1A5D4B3A00E00708;
+			remoteInfo = SwiftFHIRiOSTests;
+		};
+		26C6C1E11DDAB9380069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6DA7CD1A5D4B1000E00708;
+			remoteInfo = "SwiftFHIR-iOS";
+		};
+		26C6C1E31DDAB93B0069E772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDB8623193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+		26EBABEF1DB842E40085A4FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EBABDB1DB842E40085A4FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EBABE31DB842E40085A4FC;
+			remoteInfo = MhrClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26227BA71DD285F600D044DB /* TestServiceBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestServiceBase.swift; sourceTree = "<group>"; };
+		26227BA91DD286E900D044DB /* AccessCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccessCredentials.plist; sourceTree = "<group>"; };
+		26227BAC1DD2889F00D044DB /* IdentificationServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentificationServicesTests.swift; path = IdentificationServices/IdentificationServicesTests.swift; sourceTree = "<group>"; };
+		26227BAE1DD2A27400D044DB /* MhrConfigurationDrp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MhrConfigurationDrp.plist; sourceTree = SOURCE_ROOT; };
+		26227BAF1DD2A27400D044DB /* MhrConfigurationSvt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MhrConfigurationSvt.plist; sourceTree = SOURCE_ROOT; };
+		266B298B1DD04AFE00068C75 /* ConsumerDocumentAllergyServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumerDocumentAllergyServices.swift; path = Services/ConsumerDocumentAllergyServices.swift; sourceTree = "<group>"; };
+		266B298D1DD04B0A00068C75 /* ConsumerDocumentAllergyServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumerDocumentAllergyServicesProtocol.swift; path = Protocols/ConsumerDocumentAllergyServicesProtocol.swift; sourceTree = "<group>"; };
+		2676FC761DC6D71700322C8C /* MhrClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MhrClient.swift; sourceTree = "<group>"; };
+		269307AF1DD3F44C0040801A /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		26AA2A8B1DC6F82200855F71 /* MhrClientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MhrClientHelper.swift; sourceTree = "<group>"; };
+		26AA2AA81DC707A100855F71 /* MhrError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MhrError.swift; path = Error/MhrError.swift; sourceTree = "<group>"; };
+		26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = "Packages/OAuth2-3.0.0/OAuth2.xcodeproj"; sourceTree = "<group>"; };
+		26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftFHIR.xcodeproj; path = "Packages/SwiftFHIR-1.1.0/SwiftFHIR.xcodeproj"; sourceTree = "<group>"; };
+		26EBABE41DB842E40085A4FC /* MhrClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MhrClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EBABE71DB842E40085A4FC /* MhrClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MhrClient.h; sourceTree = "<group>"; };
+		26EBABE81DB842E40085A4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EBABED1DB842E40085A4FC /* MhrClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MhrClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EBABF41DB842E40085A4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BF424A1DD2F3BC003116B6 /* GenericDocumentationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDocumentationTests.swift; sourceTree = "<group>"; };
+		5A266D431DCAB12000478168 /* IdentificationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentificationServices.swift; path = Services/IdentificationServices.swift; sourceTree = "<group>"; };
+		5A266D451DCAB12C00478168 /* IdentificationServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentificationServicesProtocol.swift; path = Protocols/IdentificationServicesProtocol.swift; sourceTree = "<group>"; };
+		5A266D491DCAC3AA00478168 /* AuthenticationServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationServicesProtocol.swift; path = Protocols/AuthenticationServicesProtocol.swift; sourceTree = "<group>"; };
+		5A266D4D1DCAC3FA00478168 /* MedicareInformationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicareInformationProtocol.swift; path = Protocols/MedicareInformationProtocol.swift; sourceTree = "<group>"; };
+		5A266D511DCAC43B00478168 /* GenericDocumentServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericDocumentServicesProtocol.swift; path = Protocols/GenericDocumentServicesProtocol.swift; sourceTree = "<group>"; };
+		5A266D531DCAC45500478168 /* ConsumerDocumentMedicationServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumerDocumentMedicationServicesProtocol.swift; path = Protocols/ConsumerDocumentMedicationServicesProtocol.swift; sourceTree = "<group>"; };
+		5A266D551DCAC46E00478168 /* ClinicalDocumentServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClinicalDocumentServicesProtocol.swift; path = Protocols/ClinicalDocumentServicesProtocol.swift; sourceTree = "<group>"; };
+		5A266D571DCAC9F200478168 /* ServiceBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceBase.swift; path = Services/ServiceBase.swift; sourceTree = "<group>"; };
+		5A266D591DCACF5C00478168 /* AuthenticationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationServices.swift; path = Services/AuthenticationServices.swift; sourceTree = "<group>"; };
+		5A4B3D0C1DD564F9005B375F /* ConsumerDocumentMedicationServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumerDocumentMedicationServicesTests.swift; path = ConsumerDocumentMedicationServices/ConsumerDocumentMedicationServicesTests.swift; sourceTree = "<group>"; };
+		5A4B3D0E1DD565E3005B375F /* CreateMedicationsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CreateMedicationsTest.json; path = ConsumerDocumentMedicationServices/CreateMedicationsTest.json; sourceTree = "<group>"; };
+		5AF54FE91DCC535A00303A32 /* GenericDocumentServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericDocumentServices.swift; path = Services/GenericDocumentServices.swift; sourceTree = "<group>"; };
+		5AF54FF11DCC536E00303A32 /* MedicareInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicareInformation.swift; path = Services/MedicareInformation.swift; sourceTree = "<group>"; };
+		5AF54FF31DCC538000303A32 /* ConsumerDocumentMedicationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumerDocumentMedicationServices.swift; path = Services/ConsumerDocumentMedicationServices.swift; sourceTree = "<group>"; };
+		5AF54FF51DCC539600303A32 /* ClinicalDocumentServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalDocumentServices.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26EBABE01DB842E40085A4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C6C1E01DDAB92B0069E772 /* SwiftFHIR.framework in Frameworks */,
+				26C6C1DF1DDAB9270069E772 /* OAuth2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBABEA1DB842E40085A4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBABEE1DB842E40085A4FC /* MhrClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26227BAB1DD2886D00D044DB /* IdentificationServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				26227BAC1DD2889F00D044DB /* IdentificationServicesTests.swift */,
+			);
+			name = IdentificationServicesTests;
+			sourceTree = "<group>";
+		};
+		26AA2AA71DC7078F00855F71 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				26AA2AA81DC707A100855F71 /* MhrError.swift */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
+		26C6C1C21DDAB9040069E772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26C6C1C91DDAB9040069E772 /* OAuth2.framework */,
+				26C6C1CB1DDAB9040069E772 /* OAuth2.framework */,
+				26C6C1CD1DDAB9040069E772 /* OAuth2.framework */,
+				26C6C1CF1DDAB9040069E772 /* OAuth2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26C6C1D11DDAB9100069E772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26C6C1D81DDAB9110069E772 /* SwiftFHIR.framework */,
+				26C6C1DA1DDAB9110069E772 /* SwiftFHIRTests.xctest */,
+				26C6C1DC1DDAB9110069E772 /* SwiftFHIR.framework */,
+				26C6C1DE1DDAB9110069E772 /* SwiftFHIRiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26EBABDA1DB842E40085A4FC = {
+			isa = PBXGroup;
+			children = (
+				26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */,
+				26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */,
+				26EBABE61DB842E40085A4FC /* MhrClient */,
+				26EBABF11DB842E40085A4FC /* MhrClientTests */,
+				26EBABE51DB842E40085A4FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26EBABE51DB842E40085A4FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26EBABE41DB842E40085A4FC /* MhrClient.framework */,
+				26EBABED1DB842E40085A4FC /* MhrClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26EBABE61DB842E40085A4FC /* MhrClient */ = {
+			isa = PBXGroup;
+			children = (
+				5A266D421DCAB07800478168 /* Services */,
+				5A266D401DCAB06900478168 /* Protocols */,
+				26AA2AA71DC7078F00855F71 /* Error */,
+				26EBABE81DB842E40085A4FC /* Info.plist */,
+				26EBABE71DB842E40085A4FC /* MhrClient.h */,
+				2676FC761DC6D71700322C8C /* MhrClient.swift */,
+				26AA2A8B1DC6F82200855F71 /* MhrClientHelper.swift */,
+			);
+			path = MhrClient;
+			sourceTree = "<group>";
+		};
+		26EBABF11DB842E40085A4FC /* MhrClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A4B3D071DD55F73005B375F /* ConsumerDocumentMedicationServicesTests */,
+				59BF42431DD2F386003116B6 /* GenericDocumentationServicesTests */,
+				26227BAE1DD2A27400D044DB /* MhrConfigurationDrp.plist */,
+				26227BAF1DD2A27400D044DB /* MhrConfigurationSvt.plist */,
+				26227BA91DD286E900D044DB /* AccessCredentials.plist */,
+				26227BA71DD285F600D044DB /* TestServiceBase.swift */,
+				26227BAB1DD2886D00D044DB /* IdentificationServicesTests */,
+				26EBABF41DB842E40085A4FC /* Info.plist */,
+				269307AF1DD3F44C0040801A /* TestHelper.swift */,
+			);
+			path = MhrClientTests;
+			sourceTree = "<group>";
+		};
+		59BF42431DD2F386003116B6 /* GenericDocumentationServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				59BF424A1DD2F3BC003116B6 /* GenericDocumentationTests.swift */,
+			);
+			name = GenericDocumentationServicesTests;
+			sourceTree = "<group>";
+		};
+		5A266D401DCAB06900478168 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5A266D511DCAC43B00478168 /* GenericDocumentServicesProtocol.swift */,
+				5A266D491DCAC3AA00478168 /* AuthenticationServicesProtocol.swift */,
+				5A266D451DCAB12C00478168 /* IdentificationServicesProtocol.swift */,
+				5A266D4D1DCAC3FA00478168 /* MedicareInformationProtocol.swift */,
+				5A266D531DCAC45500478168 /* ConsumerDocumentMedicationServicesProtocol.swift */,
+				266B298D1DD04B0A00068C75 /* ConsumerDocumentAllergyServicesProtocol.swift */,
+				5A266D551DCAC46E00478168 /* ClinicalDocumentServicesProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		5A266D421DCAB07800478168 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A266D431DCAB12000478168 /* IdentificationServices.swift */,
+				5A266D571DCAC9F200478168 /* ServiceBase.swift */,
+				5A266D591DCACF5C00478168 /* AuthenticationServices.swift */,
+				5AF54FE91DCC535A00303A32 /* GenericDocumentServices.swift */,
+				5AF54FF11DCC536E00303A32 /* MedicareInformation.swift */,
+				5AF54FF31DCC538000303A32 /* ConsumerDocumentMedicationServices.swift */,
+				266B298B1DD04AFE00068C75 /* ConsumerDocumentAllergyServices.swift */,
+				5AF54FF51DCC539600303A32 /* ClinicalDocumentServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		5A4B3D071DD55F73005B375F /* ConsumerDocumentMedicationServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A4B3D0E1DD565E3005B375F /* CreateMedicationsTest.json */,
+				5A4B3D0C1DD564F9005B375F /* ConsumerDocumentMedicationServicesTests.swift */,
+			);
+			name = ConsumerDocumentMedicationServicesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26EBABE11DB842E40085A4FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBABF51DB842E40085A4FC /* MhrClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26EBABE31DB842E40085A4FC /* MhrClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EBABF81DB842E40085A4FC /* Build configuration list for PBXNativeTarget "MhrClient" */;
+			buildPhases = (
+				26EBABDF1DB842E40085A4FC /* Sources */,
+				26EBABE01DB842E40085A4FC /* Frameworks */,
+				26EBABE11DB842E40085A4FC /* Headers */,
+				26EBABE21DB842E40085A4FC /* Resources */,
+				261B64861DDAAEFE0084B3A2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26C6C1E41DDAB93B0069E772 /* PBXTargetDependency */,
+				26C6C1E21DDAB9380069E772 /* PBXTargetDependency */,
+			);
+			name = MhrClient;
+			productName = MhrClient;
+			productReference = 26EBABE41DB842E40085A4FC /* MhrClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		26EBABEC1DB842E40085A4FC /* MhrClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EBABFB1DB842E40085A4FC /* Build configuration list for PBXNativeTarget "MhrClientTests" */;
+			buildPhases = (
+				26EBABE91DB842E40085A4FC /* Sources */,
+				26EBABEA1DB842E40085A4FC /* Frameworks */,
+				26EBABEB1DB842E40085A4FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EBABF01DB842E40085A4FC /* PBXTargetDependency */,
+			);
+			name = MhrClientTests;
+			productName = MhrClientTests;
+			productReference = 26EBABED1DB842E40085A4FC /* MhrClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26EBABDB1DB842E40085A4FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Landon Reilly";
+				TargetAttributes = {
+					26EBABE31DB842E40085A4FC = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					26EBABEC1DB842E40085A4FC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LQTM93XLW2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 26EBABDE1DB842E40085A4FC /* Build configuration list for PBXProject "MhrClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26EBABDA1DB842E40085A4FC;
+			productRefGroup = 26EBABE51DB842E40085A4FC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26C6C1C21DDAB9040069E772 /* Products */;
+					ProjectRef = 26C6C1C11DDAB9040069E772 /* OAuth2.xcodeproj */;
+				},
+				{
+					ProductGroup = 26C6C1D11DDAB9100069E772 /* Products */;
+					ProjectRef = 26C6C1D01DDAB9100069E772 /* SwiftFHIR.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				26EBABE31DB842E40085A4FC /* MhrClient */,
+				26EBABEC1DB842E40085A4FC /* MhrClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26C6C1C91DDAB9040069E772 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = 26C6C1C81DDAB9040069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1CB1DDAB9040069E772 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = 26C6C1CA1DDAB9040069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1CD1DDAB9040069E772 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = 26C6C1CC1DDAB9040069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1CF1DDAB9040069E772 /* OAuth2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuth2Tests.xctest;
+			remoteRef = 26C6C1CE1DDAB9040069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1D81DDAB9110069E772 /* SwiftFHIR.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftFHIR.framework;
+			remoteRef = 26C6C1D71DDAB9110069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1DA1DDAB9110069E772 /* SwiftFHIRTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftFHIRTests.xctest;
+			remoteRef = 26C6C1D91DDAB9110069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1DC1DDAB9110069E772 /* SwiftFHIR.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftFHIR.framework;
+			remoteRef = 26C6C1DB1DDAB9110069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26C6C1DE1DDAB9110069E772 /* SwiftFHIRiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftFHIRiOSTests.xctest;
+			remoteRef = 26C6C1DD1DDAB9110069E772 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26EBABE21DB842E40085A4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBABEB1DB842E40085A4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26227BB01DD2A27400D044DB /* MhrConfigurationDrp.plist in Resources */,
+				26227BB11DD2A27400D044DB /* MhrConfigurationSvt.plist in Resources */,
+				5A4B3D0F1DD565E3005B375F /* CreateMedicationsTest.json in Resources */,
+				26227BAA1DD286E900D044DB /* AccessCredentials.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		261B64861DDAAEFE0084B3A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EBABDF1DB842E40085A4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A266D541DCAC45500478168 /* ConsumerDocumentMedicationServicesProtocol.swift in Sources */,
+				266B298E1DD04B0A00068C75 /* ConsumerDocumentAllergyServicesProtocol.swift in Sources */,
+				5A266D4A1DCAC3AA00478168 /* AuthenticationServicesProtocol.swift in Sources */,
+				5A266D4E1DCAC3FA00478168 /* MedicareInformationProtocol.swift in Sources */,
+				5AF54FF41DCC538000303A32 /* ConsumerDocumentMedicationServices.swift in Sources */,
+				5A266D461DCAB12C00478168 /* IdentificationServicesProtocol.swift in Sources */,
+				5AF54FEA1DCC535A00303A32 /* GenericDocumentServices.swift in Sources */,
+				5A266D561DCAC46E00478168 /* ClinicalDocumentServicesProtocol.swift in Sources */,
+				266B298C1DD04AFE00068C75 /* ConsumerDocumentAllergyServices.swift in Sources */,
+				26AA2A8D1DC6F82200855F71 /* MhrClientHelper.swift in Sources */,
+				2676FC771DC6D71700322C8C /* MhrClient.swift in Sources */,
+				5A266D5A1DCACF5C00478168 /* AuthenticationServices.swift in Sources */,
+				5A266D581DCAC9F200478168 /* ServiceBase.swift in Sources */,
+				5AF54FF61DCC539600303A32 /* ClinicalDocumentServices.swift in Sources */,
+				5A266D441DCAB12000478168 /* IdentificationServices.swift in Sources */,
+				5A266D521DCAC43B00478168 /* GenericDocumentServicesProtocol.swift in Sources */,
+				5AF54FF21DCC536E00303A32 /* MedicareInformation.swift in Sources */,
+				26AA2AA91DC707A100855F71 /* MhrError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBABE91DB842E40085A4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269307B01DD3F44C0040801A /* TestHelper.swift in Sources */,
+				26227BA81DD285F600D044DB /* TestServiceBase.swift in Sources */,
+				26227BAD1DD2889F00D044DB /* IdentificationServicesTests.swift in Sources */,
+				59BF424B1DD2F3BC003116B6 /* GenericDocumentationTests.swift in Sources */,
+				5A4B3D0D1DD564F9005B375F /* ConsumerDocumentMedicationServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26C6C1E21DDAB9380069E772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftFHIR-iOS";
+			targetProxy = 26C6C1E11DDAB9380069E772 /* PBXContainerItemProxy */;
+		};
+		26C6C1E41DDAB93B0069E772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuth2iOS;
+			targetProxy = 26C6C1E31DDAB93B0069E772 /* PBXContainerItemProxy */;
+		};
+		26EBABF01DB842E40085A4FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EBABE31DB842E40085A4FC /* MhrClient */;
+			targetProxy = 26EBABEF1DB842E40085A4FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26EBABF61DB842E40085A4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26EBABF71DB842E40085A4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26EBABF91DB842E40085A4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MhrClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gov.agency.mhrFhirClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		26EBABFA1DB842E40085A4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MhrClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gov.agency.mhrFhirClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		26EBABFC1DB842E40085A4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LQTM93XLW2;
+				INFOPLIST_FILE = MhrClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Agency.MhrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		26EBABFD1DB842E40085A4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LQTM93XLW2;
+				INFOPLIST_FILE = MhrClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Agency.MhrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26EBABDE1DB842E40085A4FC /* Build configuration list for PBXProject "MhrClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBABF61DB842E40085A4FC /* Debug */,
+				26EBABF71DB842E40085A4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EBABF81DB842E40085A4FC /* Build configuration list for PBXNativeTarget "MhrClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBABF91DB842E40085A4FC /* Debug */,
+				26EBABFA1DB842E40085A4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EBABFB1DB842E40085A4FC /* Build configuration list for PBXNativeTarget "MhrClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBABFC1DB842E40085A4FC /* Debug */,
+				26EBABFD1DB842E40085A4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26EBABDB1DB842E40085A4FC /* Project object */;
+}

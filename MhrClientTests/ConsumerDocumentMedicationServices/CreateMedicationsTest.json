@@ -1,0 +1,21 @@
+{
+    "resourceType": "MedicationStatement",
+    "patient": {
+        "reference": "Patient/8003608666761937" },
+    "informationSource": {
+        "reference": "Patient/8003608666761937" },
+    "medicationCodeableConcept": {
+        "coding": [ {
+                   "system": "http://snomed.info/sct",
+                   "code": "103.10141",
+                   "display": "Clinical Indication" } ],
+        "text": "Test-New1" },
+    "dosage": [{
+               "text": "TestTest-New1" }],
+    "reasonForUseCodeableConcept": {
+        "text": "Test-Test-New1" },
+    "effectiveDateTime": "2015-01-23",
+    "dateAsserted": "2015-02-22",
+    "note": "Sample Comments 111111111111111111111----xxxxxxxxxxxxxxxxxxxx",
+    "status": "completed"
+}
